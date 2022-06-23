@@ -1,6 +1,34 @@
 function App() {
   return (
     <div className="wrapper">
+      <div className="rightsideOwerlay">
+        <div className="rightside">
+          <h2>Корзина</h2>
+          <div className="cartWrapper">
+            <div className="cartItem">
+              <img src="img/guitars/guitar-1.svg" alt="Гитара"/>
+              <div>
+                <p className="cartDescr">Добротная гитара</p>
+                <p className="cartPrice">30 000 руб.</p>
+              </div>
+              <button className="removeBtn">
+                <img width={20} height={20} src="/img/icons/remove.svg" alt="Убрать"/>
+              </button>
+            </div>
+            <div className="cartItem">
+              <img src="img/guitars/guitar-1.svg" alt="Гитара"/>
+              <div>
+                <p className="cartDescr">Добротная гитара</p>
+                <p className="cartPrice">30 000 руб.</p>
+              </div>
+              <button className="removeBtn">
+                <img width={20} height={20} src="/img/icons/remove.svg" alt="Убрать"/>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <header>
         <div className="headerLeft">
           <svg
@@ -23,30 +51,49 @@ function App() {
         </div>
         <ul className="headerRight">
           <li>
-            <img src="/img/basket.svg" alt="Корзина" />
+            <img src="/img/icons/basket.svg" alt="Корзина" />
             <span>12000 р.</span>
           </li>
           <li>
-            <img src="/img/favorites.svg" alt="Корзина" />
+            <img src="/img/icons/favorites.svg" alt="Корзина" />
           </li>
           <li>
-            <img src="/img/user.svg" alt="Пользователь" />
+            <img src="/img/icons/user.svg" alt="Пользователь" />
           </li>
         </ul>
       </header>
       <div className="content">
-        <h1>Все гитары</h1>
-        <div className="content-wrapper">
+        <div className="contentTop">
+          <h1 className="contentTitle">Все гитары</h1>
+          <div className="search">
+            <img
+              width={25}
+              height={25}
+              src="/img/icons/search.svg"
+              alt="Поиск"
+            />
+            <input placeholder="Поиск..." />
+          </div>
+        </div>
+        <div className="contentWrapper">
           <div className="card">
+            <button className="favorite-btn">
+              <img src="/img/icons/like-inactive.svg" alt="like" />
+            </button>
             <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
             <h5 className="card-title">Добротная гитара</h5>
             <div>
-              <div className="price-wrapper">
+              <div className="priceWrapper">
                 <span>Цена:</span>
                 <b className="price">30 000 руб.</b>
               </div>
               <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
+                <img
+                  width={11}
+                  height={11}
+                  src="/img/icons/plus.svg"
+                  alt="Плюс"
+                />
               </button>
             </div>
           </div>
@@ -54,12 +101,17 @@ function App() {
             <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
             <h5 className="card-title">Добротная гитара</h5>
             <div>
-              <div className="price-wrapper">
+              <div className="priceWrapper">
                 <span>Цена:</span>
                 <b className="price">30 000 руб.</b>
               </div>
               <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
+                <img
+                  width={11}
+                  height={11}
+                  src="/img/icons/plus.svg"
+                  alt="Плюс"
+                />
               </button>
             </div>
           </div>
@@ -67,12 +119,17 @@ function App() {
             <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
             <h5 className="card-title">Добротная гитара</h5>
             <div>
-              <div className="price-wrapper">
+              <div className="priceWrapper">
                 <span>Цена:</span>
                 <b className="price">30 000 руб.</b>
               </div>
               <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
+                <img
+                  width={11}
+                  height={11}
+                  src="/img/icons/plus.svg"
+                  alt="Плюс"
+                />
               </button>
             </div>
           </div>
@@ -80,116 +137,17 @@ function App() {
             <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
             <h5 className="card-title">Добротная гитара</h5>
             <div>
-              <div className="price-wrapper">
+              <div className="priceWrapper">
                 <span>Цена:</span>
                 <b className="price">30 000 руб.</b>
               </div>
               <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
-              </button>
-            </div>
-          </div>
-          <div className="card">
-            <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
-            <h5 className="card-title">Добротная гитара</h5>
-            <div>
-              <div className="price-wrapper">
-                <span>Цена:</span>
-                <b className="price">30 000 руб.</b>
-              </div>
-              <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
-              </button>
-            </div>
-          </div>
-          <div className="card">
-            <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
-            <h5 className="card-title">Добротная гитара</h5>
-            <div>
-              <div className="price-wrapper">
-                <span>Цена:</span>
-                <b className="price">30 000 руб.</b>
-              </div>
-              <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
-              </button>
-            </div>
-          </div>
-          <div className="card">
-            <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
-            <h5 className="card-title">Добротная гитара</h5>
-            <div>
-              <div className="price-wrapper">
-                <span>Цена:</span>
-                <b className="price">30 000 руб.</b>
-              </div>
-              <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
-              </button>
-            </div>
-          </div>
-          <div className="card">
-            <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
-            <h5 className="card-title">Добротная гитара</h5>
-            <div>
-              <div className="price-wrapper">
-                <span>Цена:</span>
-                <b className="price">30 000 руб.</b>
-              </div>
-              <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
-              </button>
-            </div>
-          </div>
-          <div className="card">
-            <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
-            <h5 className="card-title">Добротная гитара</h5>
-            <div>
-              <div className="price-wrapper">
-                <span>Цена:</span>
-                <b className="price">30 000 руб.</b>
-              </div>
-              <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
-              </button>
-            </div>
-          </div>
-          <div className="card">
-            <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
-            <h5 className="card-title">Добротная гитара</h5>
-            <div>
-              <div className="price-wrapper">
-                <span>Цена:</span>
-                <b className="price">30 000 руб.</b>
-              </div>
-              <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
-              </button>
-            </div>
-          </div>
-          <div className="card">
-            <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
-            <h5 className="card-title">Добротная гитара</h5>
-            <div>
-              <div className="price-wrapper">
-                <span>Цена:</span>
-                <b className="price">30 000 руб.</b>
-              </div>
-              <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
-              </button>
-            </div>
-          </div>
-          <div className="card">
-            <img width={120} src="/img/guitars/guitar-1.svg" alt="Гитара" />
-            <h5 className="card-title">Добротная гитара</h5>
-            <div>
-              <div className="price-wrapper">
-                <span>Цена:</span>
-                <b className="price">30 000 руб.</b>
-              </div>
-              <button className="plus-button">
-                <img width={11} height={11} src="/img/plus.svg" alt="Плюс" />
+                <img
+                  width={11}
+                  height={11}
+                  src="/img/icons/plus.svg"
+                  alt="Плюс"
+                />
               </button>
             </div>
           </div>
