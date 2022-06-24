@@ -3,28 +3,48 @@ function App() {
     <div className="wrapper">
       <div className="rightsideOwerlay">
         <div className="rightside">
-          <h2>Корзина</h2>
-          <div className="cartWrapper">
-            <div className="cartItem">
-              <img src="img/guitars/guitar-1.svg" alt="Гитара"/>
-              <div>
-                <p className="cartDescr">Добротная гитара</p>
-                <p className="cartPrice">30 000 руб.</p>
+          <div className="dirgtsideTop">
+            <h2>Корзина</h2>
+            <div className="cartWrapper">
+              <div className="cartItem">
+                <img src="img/guitars/guitar-1.svg" alt="Гитара" />
+                <div>
+                  <p className="cartDescr">Добротная гитара</p>
+                  <p className="cartPrice">30 000 руб.</p>
+                </div>
+                <button className="removeBtn">
+                  <img
+                    width={20}
+                    height={20}
+                    src="/img/icons/remove.svg"
+                    alt="Убрать"
+                  />
+                </button>
               </div>
-              <button className="removeBtn">
-                <img width={20} height={20} src="/img/icons/remove.svg" alt="Убрать"/>
-              </button>
-            </div>
-            <div className="cartItem">
-              <img src="img/guitars/guitar-1.svg" alt="Гитара"/>
-              <div>
-                <p className="cartDescr">Добротная гитара</p>
-                <p className="cartPrice">30 000 руб.</p>
+              <div className="cartItem">
+                <img src="img/guitars/guitar-1.svg" alt="Гитара" />
+                <div>
+                  <p className="cartDescr">Добротная гитара</p>
+                  <p className="cartPrice">30 000 руб.</p>
+                </div>
+                <button className="removeBtn">
+                  <img
+                    width={20}
+                    height={20}
+                    src="/img/icons/remove.svg"
+                    alt="Убрать"
+                  />
+                </button>
               </div>
-              <button className="removeBtn">
-                <img width={20} height={20} src="/img/icons/remove.svg" alt="Убрать"/>
-              </button>
             </div>
+          </div>
+          <div className="rightsideBottom">
+            <div className="orderPrice">
+              <span>Итого:</span>
+              <div></div>
+              <b>30 000 руб.</b>
+            </div>
+            <button className="designBtn">Оформить заказ</button>
           </div>
         </div>
       </div>
@@ -36,6 +56,7 @@ function App() {
             width="35px"
             viewBox="0 0 553.84 1785.6"
             fill="#3c3f41"
+            // fill="#09dce4"
           >
             <path
               class="cls-1"

@@ -152,6 +152,9 @@ header {
   }
 }
 .rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   width: 385px;
   height: 100%;
@@ -160,7 +163,7 @@ header {
   background: #ffffff;
   box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  &Owerlay{
+  &Owerlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -169,14 +172,36 @@ header {
     background: rgba(30, 36, 43, 0.781);
     z-index: 10;
   }
+  .orderPrice {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+  .designBtn {
+    width: 100%;
+    padding: 15px 0;
+    // border: 1px solid #09dce4;
+    background: #3c3f41;
+    border-radius: 18px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    transition: .3s;
+    &:hover{
+      background: #09dce4;
+    }
+  }
 }
-.cart{
-  &Wrapper{
+.cart {
+  &Wrapper {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
   }
-  &Item{
+  &Item {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -185,28 +210,28 @@ header {
     border: 1px solid #e2e3e4;
     border-radius: 10px;
     padding: 15px 0;
-    img{
+    img {
       width: 50px;
       margin-bottom: 10px;
     }
-    .removeBtn{
+    .removeBtn {
       position: absolute;
       right: 0;
       top: 10px;
-      opacity: .5;
-      transition: .3s;
-      &:hover{
+      opacity: 0.5;
+      transition: 0.3s;
+      &:hover {
         opacity: 1;
       }
     }
   }
-  &Descr{
+  &Descr {
     text-align: center;
     font-size: 14px;
     color: #4a4e50;
     margin-bottom: 5px;
   }
-  &Price{
+  &Price {
     font-size: 15px;
     color: #4a4e50;
     text-align: center;
