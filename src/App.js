@@ -1,6 +1,49 @@
-import Card from "./components/Card"
-import Header from "./components/Header"
+import Card from "./components/Card";
+import Header from "./components/Header";
 import Rightside from "./components/Rightside";
+
+const arr = [
+  {
+    name: "Добротная гитара",
+    price: "30 000",
+    imageUrl: "/img/guitars/guitar-1.svg",
+  },
+  {
+    name: "Крепкая гитара",
+    price: "33 000",
+    imageUrl: "/img/guitars/guitar-2.svg",
+  },
+  {
+    name: "Старинная гитара",
+    price: "30 000",
+    imageUrl: "/img/guitars/guitar-3.svg",
+  },
+  {
+    name: "Красная гитара",
+    price: "31 000",
+    imageUrl: "/img/guitars/guitar-4.svg",
+  },
+  {
+    name: "Синяя гитара",
+    price: "35 000",
+    imageUrl: "/img/guitars/guitar-1.svg",
+  },
+  {
+    name: "Зелёная гитара",
+    price: "34 000",
+    imageUrl: "/img/guitars/guitar-2.svg",
+  },
+  {
+    name: "Чёрная гитара",
+    price: "32 000",
+    imageUrl: "/img/guitars/guitar-3.svg",
+  },
+  {
+    name: "Вишнёвая гитара",
+    price: "37 000",
+    imageUrl: "/img/guitars/guitar-4.svg",
+  },
+];
 
 function App() {
   return (
@@ -21,14 +64,9 @@ function App() {
           </div>
         </div>
         <div className="contentWrapper">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {arr.map((obj) => (
+            <Card title={obj.name} price={obj.price} imageUrl={obj.imageUrl} />
+          ))}
         </div>
       </div>
     </div>
